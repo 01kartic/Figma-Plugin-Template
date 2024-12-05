@@ -1,14 +1,9 @@
-# Figma React + Tailwind + Webpack Starter
-
+# Figma Plugin React + Tailwind
 This is a template project to help you setup Figma plugin along with React, Tailwind, and Webpack.
 
 # How to use
 
-## 1. Clone the project
-You can clone this project or click the use "Use this template button"
-
-
-## 2. Create your Figma plugin via Figma
+## 1. Create your Figma plugin via Figma
 
 Follow [this guide](https://help.figma.com/hc/en-us/articles/360042786733-Create-a-plugin-for-development) to create your Figma plugin.
 
@@ -34,7 +29,7 @@ Then copy the `manifest.json` to the cloned project. Make sure the `main` and `u
 }
 ```
 
-## 3. Run the watch script
+## 2. Run the watch script
 
 Finally, run this command:
 
@@ -43,7 +38,3 @@ yarn build:watch
 ```
 
 This will run webpack in the development mode.
-
-# Reference
-
-I used this wonderful template [https://github.com/nirsky/figma-plugin-react-template](https://github.com/nirsky/figma-plugin-react-template) as the main reference for the `webpack` and `react` setup.
