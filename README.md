@@ -1,5 +1,9 @@
 # Figma Plugin React + Tailwind
-This is a template project to help you setup Figma plugin along with React, Tailwind, and Webpack.
+This is a template project to help you setup Figma plugin along with
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB) 
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?logo=tailwind-css&logoColor=white) & 
+![Webpack](https://img.shields.io/badge/webpack-%235299C8.svg?logo=webpack&logoColor=white)
 
 # How to use
 
@@ -7,32 +11,16 @@ This is a template project to help you setup Figma plugin along with React, Tail
 
 Follow [this guide](https://help.figma.com/hc/en-us/articles/360042786733-Create-a-plugin-for-development) to create your Figma plugin.
 
-Then copy the `manifest.json` to the cloned project. Make sure the `main` and `ui` properties are pointed to the correct directory:
-
-```json
-{
-  "name": "your-plugin-name",
-  "id": "your-plugin-id",
-  "api": "1.0.0",
-  "main": "./dist/code.js",
-  "capabilities": [],
-  "enableProposedApi": false,
-  "editorType": [
-    "figma"
-  ],
-  "ui": "./dist/ui.html",
-  "networkAccess": {
-    "allowedDomains": [
-      "none"
-    ]
-  }
-}
-```
+Then copy the `id` from `manifest.json` to the cloned project's `manifest.json`.
 
 ## 2. Run the watch script
 
 Finally, run this command:
 
+```bash
+yarn
+```
+and
 ```bash
 yarn build:watch
 ```
